@@ -6,3 +6,13 @@ each item in items
         div.six.columns
             = item.open_issues
             |  issues
+        div.row
+        div.two.columns
+            = item.forks_count
+            |  forks
+        div.three.columns
+            = item.updated_at
+            |  last updated
+        div.one.columns
+            = item.watchers
+            |  watchers

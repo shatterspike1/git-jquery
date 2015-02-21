@@ -7,7 +7,7 @@ function repoView(full_name){
     $.get("https://api.github.com/repos/" + full_name, github, function(data) {
         
         var repo = data
-        // console.log(repo)
+        console.log(repo)
 
         $.get("/git-jquery/templates/repoView.jade", function(template) {
 
