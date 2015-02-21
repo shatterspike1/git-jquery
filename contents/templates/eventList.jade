@@ -1,0 +1,23 @@
+div.row
+    div.two.columns
+        = "Type"
+    div.three.columns
+        = "Date"
+    div.three.columns
+        = "Repository"
+    div.three.columns
+        = "Event ID"
+    div.one.columns
+        = "Size"
+each item in items
+    div.row
+        div.two.columns
+            = item.type
+        div.three.columns
+            = item.created_at
+        div.three.columns
+            = item.repo.name
+        div.three.columns
+            = item.id
+        div.one.columns
+            = item.payload.size

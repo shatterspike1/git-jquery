@@ -1,7 +1,7 @@
 each item in items
     div.row 
         div.six.columns
-            a(href="#", onClick='repoView("' + item.full_name + '")')
+            a(href="#", onClick='myRepo("' + item.full_name + '")')
                 = item.full_name
         div.six.columns
             = item.open_issues
